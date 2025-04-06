@@ -1,20 +1,16 @@
 package com.example.user.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-
 import com.example.user.dto.UserUploadDto;
 import com.example.user.entity.User;
 import com.example.user.mapper.UserMapper;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.example.user.service.IUserService;
 import com.example.user.util.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.regex.Pattern;
 
 @Service

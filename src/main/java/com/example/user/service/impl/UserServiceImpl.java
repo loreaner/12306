@@ -30,8 +30,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         // 调用 getOne 方法检查用户是否存在
         if (userMapper.selectOne(queryWrapper) != null) {
+            log.info("登录成功");
             return ResponseResult.success("登录成功");
         }
+        log.info("登录失败");
         return ResponseResult.error("登录失败");
     }
    @Override
